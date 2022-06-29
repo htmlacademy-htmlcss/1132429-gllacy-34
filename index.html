@@ -22,8 +22,10 @@
             <a class="site-navigation__link" href="#">О компании</a>
           </li>
         </ul>
-        <a class="site-navigation__contact" href="tel:+78005558628">+7 800 555-86-28</a>
-        <ul class="site-navigation navigation-user">
+        <ul class="site-navigation__list navigation-user">
+          <li class="navigation-user__item navigation-user__item--main">
+            <a class="navigation-user__link navigation-user__link--main" href="tel:+78005558628">+7 800 555-86-28</a>
+          </li>
           <li class="navigation-user__item">
             <a class="navigation-user__link" href="#">
               <span class="visually-hidden">Поиск.</span>
@@ -38,7 +40,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-index container">
       <h1 class="visually-hidden">Сервис доставки мороженного Глейси</h1>
       <section class="slider container">
         <h2 class="visually-hidden">Закажите мороженное</h2>
@@ -61,13 +63,13 @@
         <div class="slider-content">
           <ol class="slider-content__list">
             <li class="slider-content__item">
-              <img class="slider-content__image" src="./images/product/icecream-strawberry.jpg" alt="Нежный пломбир с клубничным джемом." width="306" height="507">
+              <img class="slider-content__image" src="./images/product/icecream-strawberry.png" alt="Нежный пломбир с клубничным джемом." width="306" height="507">
             </li>
             <li class="slider-content__item">
-              <img class="slider-content__image" src="./images/product/icecream-banana.jpg" alt="Сливочное мороженое со вкусом банана." width="66" height="150">
+              <img class="slider-content__image" src="./images/product/icecream-banana.png" alt="Сливочное мороженое со вкусом банана." width="66" height="150">
             </li>
             <li class="slider-content__item">
-              <img class="slider-content__image" src="./images/product/icecream-caramel.jpg" alt="Карамельный пломбир с маршмеллоу." width="66" height="150">
+              <img class="slider-content__image" src="./images/product/icecream-caramel.png" alt="Карамельный пломбир с маршмеллоу." width="66" height="150">
             </li>
           </ol>
         </div>
@@ -126,7 +128,7 @@
         <h2 class="main-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <article class="product__card">
           <a class="product__link" href="#">
-            <img class="product__image" src="./images/product/raspberry.jpg" alt="Малиновое мороженное." width="168" height="168">
+            <img class="product__image" src="./images/product/raspberry.png" alt="Малиновое мороженное." width="168" height="168">
           </a>
           <a class="product__link" href="#">
             <h2 class="product__title">Малинка</h2>
@@ -139,7 +141,7 @@
         </article>
         <article class="product__card">
           <a class="product__link" href="#">
-            <img class="product__image" src="./images/product/pistachio.jpg" alt="Фисташковое мороженное." width="168" height="168">
+            <img class="product__image" src="./images/product/pistachio.png" alt="Фисташковое мороженное." width="168" height="168">
           </a>
           <a class="product__link" href="#">
             <h2 class="product__title">Фисташка</h2>
@@ -152,7 +154,7 @@
         </article>
         <article class="product__card">
           <a class="product__link" href="#">
-            <img class="product__image" src="./images/product/blueberry.jpg" alt="Черничное мороженное." width="168" height="168">
+            <img class="product__image" src="./images/product/blueberry.png" alt="Черничное мороженное." width="168" height="168">
           </a>
           <a class="product__link" href="#">
             <h2 class="product__title">Черника</h2>
@@ -165,7 +167,7 @@
         </article>
         <article class="product__card">
           <a class="product__link" href="#">
-            <img class="product__image" src="./images/product/bubblegum.jpg" alt="Мороженное со вкусом жвачки." width="168" height="168">
+            <img class="product__image" src="./images/product/bubblegum.png" alt="Мороженное со вкусом жвачки." width="168" height="168">
           </a>
           <a class="product__link" href="#">
             <h2 class="product__title">Бабл-гам</h2>
@@ -215,7 +217,7 @@
             </div>
             <div class="form__container">
               <label class="form__label" for="phone">Телефон</label>
-              <input class="delivery__input input" type="phone" name="phone" id="phone" placeholder="+7 800 999-00-00">
+              <input class="delivery__input input" type="text" name="phone" id="phone" placeholder="+7 800 999-00-00">
             </div>
             <div class="form__container">
               <label class="form__label" for="address">Адрес</label>
@@ -231,7 +233,7 @@
           <p class="contact__description">Адрес главного офиса и офлайн-магазина:</p>
           <address class="contact__main-info">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
           <p class="contact__description">Для заказов по телефону:</p>
-          <a class="contact__main-info" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+          <a class="contact__main-info" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <p class="contact__additional-info">(с 10 до 20 ежедневно)</p>
           <a class="button button--secaondary" href="#">Форма обратной связи</a>
         </div>
@@ -263,6 +265,7 @@
           <li class="footer-navigation__item">
             <a class="footer-navigation__link" href="#">Экологические стандарты</a>
           </li>
+        </ul>
       </div>
       <div class="htmlacademy">
         <a class="htmlacademy__link" href="https://htmlacademy.ru" target="_blank">
@@ -270,7 +273,6 @@
         </a>
         <p class="htmlacademy__description">Сделано в <a class="htmlacademy__description-link" href="https://htmlacademy.ru">.html academy</a> © 2021</p>
       </div>
-      </ul>
     </footer>
   </body>
 </html>

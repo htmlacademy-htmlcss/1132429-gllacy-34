@@ -22,14 +22,120 @@
   font-display: swap;
 }
 
-body {
-  font-family: Inter, Arial, sans-serif;
+:root {
+  --main-text-color: #565C66;
+  --additional-text-color: #2D3440;
+  --main-background-color: #FEAFC3;
 }
 
-* {
+body {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-:root {
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  padding: 24px 0;
+  color: var(--additional-text-color);
+}
+
+.logo {
+  display: block;
+  min-width: 137px;
+  padding: 0;
+  margin: 0 16px 0 0;
+}
+
+.page-header__image {
+  vertical-align: middle;
+}
+
+.site-navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.site-navigation__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.site-navigation__link {
+  display: block;
+  line-height: 20px;
+  font-style: inherit;
+  color: var(--main-text-color);
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0;
+}
+
+.navigation-user {
+  min-width: 431px;
+  justify-content: flex-end;
+}
+
+.navigation-user__item {
+  padding: 0;
+  margin-right: 16px;
+}
+
+.navigation-user__item--main {
+  margin: 6px 16px 6px 0;
+  font-weight: 700;
+}
+
+.navigation-user__item:last-child {
+  margin-right: 0;
+}
+
+.navigation-user__link {
+  text-decoration: none;
+  color: var(--additional-text-color);
+  padding: 6px 16px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+}
+
+.navigation-user__link--main {
+  padding: 6px 0;
+  background-color: transparent;
 }
