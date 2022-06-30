@@ -404,7 +404,7 @@ img {
 .product-container {
   display: grid;
   grid-template-columns: repeat(4, 270px);
-  gap: 30px;
+  gap: 81px 30px;
 }
 
 .product__card {
