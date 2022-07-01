@@ -442,6 +442,7 @@ img {
   text-align: center;
   padding: 0;
   margin: 0 0 16px;
+  flex-grow: 1;
 }
 
 .product__price-container {
@@ -474,6 +475,7 @@ img {
   border-radius: 16px;
   padding: 24px;
   min-height: 480px;
+  margin-bottom: 80px;
 }
 
 .advantages-container {
@@ -528,4 +530,39 @@ img {
 
 .advantages__item--delivery::after {
   background: url("../images/icons/icon-thermometer.svg") no-repeat 50% 50%;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  gap: 30px;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  border-radius: 16px;
+  padding: 32px;
+  min-height: 224px;
+}
+
+.news-container__blog {
+  background: #ffffff url("../images/backgrounds/background-news.png") no-repeat 0 50% / cover;
+  padding-right: 235px;
+  padding-bottom: 67px;
+}
+
+.news-container__description {
+  line-height: 20px;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+.news-container__link {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--additional-text-color);
+  font-weight: 700;
+  text-decoration: none;
 }
